@@ -174,6 +174,9 @@
 }
 
 .general_content {
+  padding-top: 50px;
+  padding-bottom: 130px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +281,7 @@
 }
 
 .general_right_img {
+  width: 212%;
   overflow: hidden;
   max-width: none;
 }
@@ -290,7 +294,7 @@
 .elipse {
   position: absolute;
   left: 0px;
-  top: -108px;
+  top: -107px;
   display: none;
 }
 
@@ -1126,6 +1130,13 @@
     margin-bottom: 0px;
   }
 }
+
+@media (max-width:580px) {
+  .elipse{
+    top: -90px;
+  }
+}
+
 @media (max-width: 739px) {
   .footer_content {
     display: block;
@@ -1238,6 +1249,7 @@
   .general_content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        padding-top: 0px;
   }
   .general_content_left {
     margin-top: 58px;
@@ -1366,6 +1378,8 @@
   .navigation_item.for_phone {
     display: block;
   }
+
+
 }
 @media (max-widtH: 1172px) {
   .navigation_item {

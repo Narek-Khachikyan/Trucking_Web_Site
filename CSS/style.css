@@ -1246,6 +1246,7 @@
   }
 }
 @media (max-widtH: 1023px) {
+    
   .general_content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1379,6 +1380,10 @@
     display: block;
   }
 
+  
+  .header_down_content{
+  padding-top: 10px;
+}
 
 }
 @media (max-widtH: 1172px) {

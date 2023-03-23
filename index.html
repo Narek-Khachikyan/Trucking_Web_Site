@@ -13,18 +13,19 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header_up">
+                <div class="header_up_content">
+                    <div class="header_up_content_wrapper">
+                        <div class="our_mission"><a class="header_up_item" href="#">Наша миссия</a></div>
+                        <div class="payments_method"><a class="header_up_item" href="#">Способы оплаты</a></div>
+                        <div class="Cargo_transportation"><a class="header_up_item" href="#">Грузоперевозки по
+                                России</a></div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="header_content">
-                    <div class="header_up">
-                        <div class="header_up_content">
-                            <div class="header_up_content_wrapper">
-                                <div class="our_mission"><a class="header_up_item" href="#">Наша миссия</a></div>
-                                <div class="payments_method"><a class="header_up_item" href="#">Способы оплаты</a></div>
-                                <div class="Cargo_transportation"><a class="header_up_item" href="#">Грузоперевозки по
-                                        России</a></div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="header_down">
                         <div class="header_down_content">
                             <div class="hamburger">
@@ -36,7 +37,7 @@
                             <div class="logo"><img class="logo_img" src="./IMG/logo.svg" alt=""></div>
                             <div class="navigation_and_other">
                                 <ul class="navigation">
-                                    <li><a class="navigation_item" href="#">Расчет расстояний</a></li>
+                                    <li><a class="navigation_item no_left" href="#">Расчет расстояний</a></li>
                                     <li><a class="navigation_item" href="#">Статьи</a></li>
                                     <li><a class="navigation_item" href="#">Автопарк</a></li>
                                     <li><a class="navigation_item" href="#">Калькулятор</a></li>
@@ -54,7 +55,7 @@
                                         <p class="work">Работаем с 8:00 по 17:00 МСК</p>
                                     </div>
                                 </div>
-                                <div class="button"><a class="button_item" href="#">Обратный звонок</a></div>
+                                <div class="button forPhone"><a class="button_item" href="#">Обратный звонок</a></div>
                             </div>
                         </div>
                     </div>
@@ -62,31 +63,34 @@
             </div>
         </header>
         <div class="general">
-            <div class="general_content">
-                <div class="general_content_left">
-                    <p class="general_mainText">Гарантируем <br> своевременную доставку</p>
-                    <p class="general_subText">Мы предлагаем индивидуальные условия для каждого заказчика,
-                        в том числе предусматриваем особые гарантии по своевременной доставке грузов в договоре</p>
-                    <div class="buttons_wrapper">
-                        <div class="buttons_wrapper_content">
-                            <div class="callBack_button"><a class="callBack_button_item" href="#">Обратный звонок</a>
-                            </div>
-                            <div class="button2">
-                                <div class="button2_wrapper">
-                                    <img class="arrow_right_for_adaptive" src="./IMG/arrow_right.svg" alt="">
-                                    <a class="button2_item" href="#">Рассчитать стоимость перевозки</a>
+            <div class="general_container">
+                <div class="general_content">
+                    <div class="general_content_left">
+                        <p class="general_mainText">Гарантируем <br> своевременную доставку</p>
+                        <p class="general_subText">Мы предлагаем индивидуальные условия для каждого заказчика,
+                            в том числе предусматриваем особые гарантии по своевременной доставке грузов в договоре</p>
+                        <div class="buttons_wrapper">
+                            <div class="buttons_wrapper_content">
+                                <div class="callBack_button"><a class="callBack_button_item" href="#">Обратный
+                                        звонок</a>
+                                </div>
+                                <div class="button2">
+                                    <div class="button2_wrapper">
+                                        <img class="arrow_right_for_adaptive" src="./IMG/arrow_right.svg" alt="">
+                                        <a class="button2_item" href="#">Рассчитать стоимость перевозки</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="general_right">
-                  
-                    <img class="general_right_img" src="./IMG/truck_with_logo.png" alt="truck_Img">
-                </div>
+                    <div class="general_right">
+                        <img class="general_right_img" src="./IMG/truck_with_logo.png" alt="truck_Img">
+                    </div>
 
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -322,11 +326,11 @@
                     <img src="./IMG/thanksgiving_img.png" alt="thanksgiving_img" class="thanksgiving_img">
                 </div>
 
-                <div class="thanksgiving_card">
+                <div class="thanksgiving_card displayNoneTablet_forPhone">
                     <img src="./IMG/thanksgiving_img.png" alt="thanksgiving_img" class="thanksgiving_img">
                 </div>
 
-                <div class="thanksgiving_card">
+                <div class="thanksgiving_card displayNoneTablet">
                     <img src="./IMG/thanksgiving_img.png" alt="thanksgiving_img" class="thanksgiving_img">
                 </div>
             </div>
@@ -375,9 +379,9 @@
 
                                 <div class="calculation_input_wrapper">
                                     <label class="label">Дата</label>
-                                    <label for="#" class="labelData"><img class="labelDataItem"
-                                            src="./IMG/Calendar_icon.svg" alt="calendar_img"></label>
-                                    <input class="calculation_input" type="text">
+
+                                    <input class="calculation_input" type="date" id="start" name="trip-start"
+                                        value="2023-08-18" min="2023-01-01" max="2023-12-31">
                                 </div>
                                 <div class="calculation_input_wrapper">
                                     <label class="label">Что планируете перевести</label>
@@ -404,7 +408,7 @@
 
 
     <footer class="footer">
-        <div class="footer_container">
+        <div class="container">
             <div class="footer_content">
                 <div class="footer_logo"><img src="./IMG/logo.svg" alt="logo"></div>
                 <ul class="footer_Section">

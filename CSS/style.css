@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Alibaba Sans";
   src: url("../Fonts/AlibabaSans-Regular.ttf");
@@ -26,7 +33,15 @@
   margin: 0 auto;
 }
 
+/* ------------------------ HEADER ------------------- */
+
+.header_up{
+  background: rgba(255, 255, 255, 0.03);
+}
+
 .header_up_content {
+  max-width: 1270px;
+  margin: 0 auto;
   padding: 17px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +49,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: rgba(255, 255, 255, 0.03);
+  
 }
 
 .header_up_content_wrapper {
@@ -74,6 +89,8 @@
 .hamburger {
   display: none;
   cursor: pointer;
+  position: relative;
+  z-index: 80;
 }
 
 .hamburger .bar {
@@ -97,13 +114,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 18px;
+  
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navigation_item {
+  margin-left: 18px;
+
   font-family: "Golos";
   font-style: normal;
   font-weight: 400;
@@ -111,6 +130,11 @@
   line-height: 16px;
   color: #FFFFFF;
 }
+
+.navigation_item.no_left{
+  margin-left: 0px;
+}
+
 .navigation_item:hover {
   color: #FFFFFF;
 }
@@ -152,8 +176,8 @@
 
 .button {
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: -o-linear-gradient(bottom, #284DD4, #284DD4), #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: linear-gradient(0deg, #284DD4, #284DD4), #FFFFFF;
   border-radius: 14px;
   display: block;
@@ -173,6 +197,20 @@
   color: #FAFAFA;
 }
 
+
+/* ------------------------ GENERAL ------------------- */
+
+.general{
+  position: relative;
+  overflow: hidden;
+}
+
+.general_container{
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
 .general_content {
   padding-top: 50px;
   padding-bottom: 130px;
@@ -190,7 +228,6 @@
 
 .general_content_left {
   max-width: 580px;
-  padding-left: 85px;
 }
 
 .general_mainText {
@@ -277,7 +314,7 @@
 }
 
 .general_right {
-  overflow: hidden;
+  max-width: none;
 }
 
 .general_right_img {
@@ -285,6 +322,8 @@
   overflow: hidden;
   max-width: none;
 }
+
+/* ------------------------ SAVE TIME ------------------- */
 
 .save_time {
   position: relative;
@@ -393,6 +432,10 @@
   height: 45%;
 }
 
+
+/* ------------------------ AUTO PARK ------------------- */
+
+
 .autopark {
   padding-bottom: 56px;
 }
@@ -497,11 +540,22 @@
   color: rgba(18, 18, 18, 0.56);
 }
 
+.specifications_spanitem{
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  
+  color: rgba(18, 18, 18, 0.56);
+}
+
+
 .calculateCost_button {
   padding: 13px 16px;
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: -o-linear-gradient(bottom, #284DD4, #284DD4), #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: linear-gradient(0deg, #284DD4, #284DD4), #FFFFFF;
   border-radius: 14px;
 }
@@ -515,6 +569,9 @@
   line-height: 16px;
   color: #FAFAFA;
 }
+
+/* ------------------------ TYPES OF TRANSPORTATION CONTENT ------------------- */
+
 
 .types_of_transportation_content {
   display: -ms-grid;
@@ -646,6 +703,9 @@
   color: #FFFFFF;
 }
 
+/* ------------------------ WHY CHOOSE US ------------------- */
+
+
 .why_choose_us {
   margin-top: 22px;
   padding-bottom: 90px;
@@ -740,6 +800,8 @@
   margin-top: 10px;
 }
 
+/* ------------------------ THANKSGIVING ------------------- */
+
 .thanksgiving {
   margin-top: 22px;
   padding-bottom: 67px;
@@ -779,6 +841,8 @@
 .thanksgiving_card {
   margin-top: 16px;
 }
+
+/* ------------------------ CALCULATION ------------------- */
 
 .calculation {
   padding-bottom: 70px;
@@ -896,8 +960,8 @@
 
 .calculation_input {
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#F8F8F8), to(#F8F8F8)), #E1E3E6;
   background: -o-linear-gradient(bottom, #F8F8F8, #F8F8F8), #E1E3E6;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F8F8F8), to(#F8F8F8)), #E1E3E6;
   background: linear-gradient(0deg, #F8F8F8, #F8F8F8), #E1E3E6;
   border-radius: 12px;
   padding: 24px 0px 10px 16px;
@@ -907,6 +971,12 @@
   font-size: 13px;
   line-height: 16px;
   color: #292D32;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  width: 28px;
+  height: 28px;
+  padding-right: 16px;
 }
 
 .formButton_and_agreement {
@@ -925,8 +995,8 @@
 
 .formButton {
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: -o-linear-gradient(bottom, #284DD4, #284DD4), #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: linear-gradient(0deg, #284DD4, #284DD4), #FFFFFF;
   border-radius: 14px;
 }
@@ -963,8 +1033,13 @@
   display: none;
 }
 
+/* ------------------------ FOOTER ------------------- */
+
 .footer {
-  background: #040404;
+  background-image:url("../IMG/footer_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer_container {
@@ -996,8 +1071,11 @@
   color: #FFFFFF;
 }
 
-.footer_SectionItem {
+.footer_Section li {
   margin-top: 8px;
+}
+
+.footer_SectionItem {
   font-family: "Golos";
   font-style: normal;
   font-weight: 400;
@@ -1060,8 +1138,8 @@
 
 .footer_button {
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: -o-linear-gradient(bottom, #284DD4, #284DD4), #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#284DD4), to(#284DD4)), #FFFFFF;
   background: linear-gradient(0deg, #284DD4, #284DD4), #FFFFFF;
   border-radius: 14px;
 }
@@ -1113,10 +1191,6 @@
   }
 }
 @media (max-width: 425px) {
-  .thanksgiving_card {
-    width: 45%;
-    height: 45%;
-  }
   .thanksgiving {
     padding-bottom: 30px;
   }
@@ -1128,6 +1202,21 @@
   }
   .thanksgiving_SubText {
     margin-bottom: 0px;
+  }
+
+  .thanksgiving_content{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .thanksgiving_card{
+    width: 90% !important;
   }
 }
 
@@ -1150,7 +1239,39 @@
   .footer_button {
     margin-top: 40px;
   }
+
+  .footer_logo{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
+
+
+@media (max-width:768px) {
+
+  .thanksgiving_content{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .thanksgiving_card{
+    width: 50%;
+  }
+}
+
 @media (max-width: 829px) {
   .calculateCost_button {
     width: 100%;
@@ -1265,12 +1386,18 @@
   .navigation_and_other {
     position: fixed;
     left: -100%;
-    top: 75px;
+    top: 0px;
     gap: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #040404;
     width: 100%;
     height: 100%;
@@ -1279,12 +1406,14 @@
     -o-transition: 0.3s;
     transition: 0.3s;
     color: black;
+    z-index: 30;
   }
   .navigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+            gap: 18px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1294,7 +1423,6 @@
   .active {
     left: 0%;
     color: black;
-    z-index: 80;
   }
   .lock {
     overflow: hidden;
@@ -1383,6 +1511,15 @@
   
   .header_down_content{
   padding-top: 10px;
+}
+
+.navigation_item{
+  margin-left: 0px;
+  
+}
+
+.button.forPhone{
+  margin-top: 18px;
 }
 
 }

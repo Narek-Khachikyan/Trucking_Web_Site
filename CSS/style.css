@@ -1551,3 +1551,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
         justify-content: space-around;
   }
 }
+
+@media (min-width: 2440px) {
+  .general_right_img{
+        width: 230%;
+  }
+      
+}

@@ -5,7 +5,8 @@
     font-family: "Golos";
     src: url("../Fonts/Golos-Text_DemiBold.ttf");
     src: url("../Fonts/Golos-Text_Regular.ttf");
-    src: url("../Fonts/Golos-Text_Medium.ttf")
+    src: url("../Fonts/Golos-Text_Medium.ttf");
+    font-display: swap;
 }
 
 
@@ -329,7 +330,7 @@
     left: 0px;
     top: -110px;
     display: none;
-    
+
 }
 
 .container {}
@@ -1170,7 +1171,7 @@
 
     .thanksgiving{
         padding-bottom: 30px;
-        
+
     }
 
     .why_choose_us{
@@ -1217,21 +1218,21 @@
         align-items: center;
     }
 
-  
 
-    
+
+
 }
 
 @media (max-width:860px) {
     .types_of_transportation_content{
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .transportation_card.one,.transportation_card.three,.transportation_card.four{
         height: 279px;
-        
+
     }
 
     .transportation_card_content{
@@ -1246,7 +1247,7 @@
     .transportation_card.two{
         height: 442px;
     }
-    
+
 }
 
 @media (max-width:616px) {
@@ -1354,7 +1355,7 @@
 
     .lock {
         overflow: hidden;
-      }   
+      }
 
     .logo {
         width: 100%;
@@ -1366,7 +1367,7 @@
     .general_content{
         justify-content: center;
         align-items: center;
-       
+
     }
 
     .general_mainText{
@@ -1399,9 +1400,9 @@
     }
 
     .button2_item{
-       
+
         padding: 16px 0px;
-       
+
     }
 
     .button2_item::before{
@@ -1419,11 +1420,11 @@
         display: inline-block;
     }
 
-   
+
     .elipse{
         display: block;
     }
-   
+
     .navigation_item.for_phone{
         display: block;
     }
@@ -1451,7 +1452,7 @@
         margin-top: 28px;
     }
 
-    
+
 }
 
 
